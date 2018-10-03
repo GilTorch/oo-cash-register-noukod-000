@@ -1,4 +1,5 @@
 
+require 'pry'
 class CashRegister
 
   attr_accessor :total ,:discount
@@ -13,6 +14,7 @@ class CashRegister
   end
 
   def apply_discount
+    binding.pry
     @total-=@discount
   end
 
